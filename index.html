@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CoronerIA - AI-Powered Forensic Documentation. Transform autopsy dictation into structured protocols in minutes, not hours. Built with Azure AI.">
+    <meta name="keywords" content="CoronerIA, Sekhmed, forensic AI, autopsy documentation, Azure AI, medical AI, Peru">
+    <meta name="author" content="Sekhmed - Universidad Nacional de San Agustín">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="CoronerIA - AI-Powered Forensic Documentation">
+    <meta property="og:description"
+        content="Transform autopsy dictation into structured protocols in minutes. Built with Azure AI.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sekhmed.me/coroneria">
+    <meta property="og:image" content="assets/images/hero-dashboard.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CoronerIA - AI-Powered Forensic Documentation">
+    <meta name="twitter:description" content="Transform autopsy dictation into structured protocols in minutes.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo-sekhmed.png">
+    <link rel="apple-touch-icon" href="assets/images/logo-sekhmed.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>CoronerIA | AI-Powered Forensic Documentation by Sekhmed</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo-sekhmed.png" alt="Sekhmed Logo" class="logo-img">
+                <span class="logo-text">Sekhmed</span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#tech-stack" class="nav-link">Tech Stack</a>
+                <a href="#demo" class="nav-link">Demo</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#demo" class="btn btn-primary btn-glow">
+                    <i data-lucide="play"></i>
+                    Try Demo
+                </a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-up">
+                    <i data-lucide="sparkles"></i>
+                    <span>Powered by Azure AI</span>
+                </div>
+
+                <h1 class="hero-title animate-fade-up delay-1">
+                    <span class="text-gradient">AI-Powered</span>
+                    <br>
+                    Forensic Documentation
+                </h1>
+
+                <p class="hero-subtitle animate-fade-up delay-2">
+                    Transform autopsy dictation into structured protocols in
+                    <span class="highlight">minutes, not hours</span>.
+                    Built with Azure AI for Peru's forensic system.
+                </p>
+
+                <div class="hero-cta animate-fade-up delay-3">
+                    <a href="#demo" class="btn btn-primary btn-lg btn-glow">
+                        <i data-lucide="play-circle"></i>
+                        Watch Demo
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-lg">
+                        <i data-lucide="arrow-right"></i>
+                        Try Beta
+                    </a>
+                </div>
+
+                <div class="hero-powered animate-fade-up delay-4">
+                    <span class="powered-label">Powered by</span>
+                    <div class="powered-logos">
+                        <div class="powered-logo" title="Azure AI Speech">
+                            <img src="assets/images/azure-logos/azure-speech.png" alt="Azure AI Speech">
+                        </div>
+                        <div class="powered-logo" title="Azure OpenAI">
+                            <img src="assets/images/azure-logos/azure-openai.png" alt="Azure OpenAI">
+                        </div>
+                        <div class="powered-logo" title="Azure Container Apps">
+                            <img src="assets/images/azure-logos/azure-container.png" alt="Azure Container Apps">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual animate-fade-up delay-2">
+                <div class="hero-mockup">
+                    <div class="mockup-glow"></div>
+                    <div class="mockup-frame">
+                        <div class="mockup-header">
+                            <div class="mockup-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="mockup-title">CoronerIA Dashboard</span>
+                        </div>
+                        <img src="assets/images/hero-dashboard.png" alt="CoronerIA Dashboard" class="mockup-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <a href="#problem" class="scroll-indicator">
+                <i data-lucide="chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section problem" id="problem">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Crisis</span>
+                <h2 class="section-title">Peru's Forensic System is <span class="text-gradient">Overwhelmed</span></h2>
+                <p class="section-subtitle">
+                    Critical backlogs affect justice delivery across the nation
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card glass-card animate-on-scroll">
+                    <div class="stat-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <div class="stat-number" data-count="660">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Autopsies Monthly</div>
+                    <div class="stat-desc">Across Peruvian institutions</div>
+                </div>
+
+                <div class="stat-card glass-card animate-on-scroll">
+                    <div class="stat-icon warning">
+                        <i data-lucide="alert-triangle"></i>
+                    </div>
+                    <div class="stat-number" data-count="35">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label">Backlogged Cases</div>
+                    <div class="stat-desc">Overdue by 20+ days</div>
+                </div>
+
+                <div class="stat-card glass-card animate-on-scroll">
+                    <div class="stat-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <div class="stat-number" data-count="45">0</div>
+                    <div class="stat-suffix">min</div>
+                    <div class="stat-label">Per Case</div>
+                    <div class="stat-desc">Manual documentation time</div>
+                </div>
+
+                <div class="stat-card glass-card animate-on-scroll">
+                    <div class="stat-icon warning">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <div class="stat-number" data-count="15000">0</div>
+                    <div class="stat-suffix"></div>
+                    <div class="stat-label">Specialist Deficit</div>
+                    <div class="stat-desc">Doctors needed in Peru</div>
+                </div>
+            </div>
+
+            <div class="problem-quote glass-card animate-on-scroll">
+                <i data-lucide="quote" class="quote-icon"></i>
+                <blockquote>
+                    "75-91% of pending forensic cases in Peruvian institutions are overdue by more than 20 days,
+                    critically affecting criminal investigations and justice delivery."
+                </blockquote>
+                <cite>
+                    <a href="#" target="_blank">IMLCF Peru 2025 Report</a>
+                </cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section solution" id="solution">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Solution</span>
+                <h2 class="section-title">From Voice to <span class="text-gradient">Protocol</span></h2>
+                <p class="section-subtitle">
+                    Three simple steps to revolutionize forensic documentation
+                </p>
+            </div>
+
+            <div class="solution-flow">
+                <div class="solution-step glass-card animate-on-scroll">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i data-lucide="mic"></i>
+                    </div>
+                    <h3 class="step-title">Speak</h3>
+                    <p class="step-desc">
+                        Dictate findings naturally in Spanish.
+                        Our AI understands medical terminology.
+                    </p>
+                </div>
+
+                <div class="solution-arrow animate-on-scroll">
+                    <i data-lucide="arrow-right"></i>
+                </div>
+
+                <div class="solution-step glass-card animate-on-scroll">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <h3 class="step-title">Process</h3>
+                    <p class="step-desc">
+                        Azure AI extracts entities: organs, weights,
+                        lesions, and maps to IMLCF format.
+                    </p>
+                </div>
+
+                <div class="solution-arrow animate-on-scroll">
+                    <i data-lucide="arrow-right"></i>
+                </div>
+
+                <div class="solution-step glass-card animate-on-scroll">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i data-lucide="file-check"></i>
+                    </div>
+                    <h3 class="step-title">Export</h3>
+                    <p class="step-desc">
+                        Generate official IMLCF protocol PDFs
+                        ready for submission.
+                    </p>
+                </div>
+            </div>
+
+            <div class="solution-result animate-on-scroll">
+                <div class="result-badge">
+                    <i data-lucide="zap"></i>
+                    <span>From <strong>45 minutes</strong> to <strong>10 minutes</strong> per case</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Protocol View Section -->
+    <section class="section protocol-view" id="protocol">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Detailed View</span>
+                <h2 class="section-title">Granular <span class="text-gradient">Control</span></h2>
+                <p class="section-subtitle">
+                    Review every detail with our structured case view
+                </p>
+            </div>
+
+            <div class="protocol-visual animate-on-scroll">
+                <div class="glass-card protocol-card">
+                    <img src="assets/images/image.png" alt="CoronerIA Case Detail View" class="protocol-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Everything You Need for <span class="text-gradient">Modern Forensics</span>
+                </h2>
+                <p class="section-subtitle">
+                    Powerful AI capabilities designed for medical professionals
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i data-lucide="mic"></i>
+                    </div>
+                    <h3 class="feature-title">Voice-to-Protocol</h3>
+                    <p class="feature-desc">
+                        Speak naturally in Spanish. Our AI handles complex medical
+                        terminology and automatically structures your dictation.
+                    </p>
+                    <div class="feature-tag">Azure AI Speech</div>
+                </div>
+
+                <div class="feature-card glass-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i data-lucide="dna"></i>
+                    </div>
+                    <h3 class="feature-title">Medical NER</h3>
+                    <p class="feature-desc">
+                        Automatic extraction of organs, weights, lesions,
+                        and causes using Named Entity Recognition.
+                    </p>
+                    <div class="feature-tag">Azure OpenAI GPT-4</div>
+                </div>
+
+                <div class="feature-card glass-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i data-lucide="box"></i>
+                    </div>
+                    <h3 class="feature-title">3D Anatomy Model</h3>
+                    <p class="feature-desc">
+                        Interactive body model that highlights detected organs
+                        and lesions in real-time as you dictate.
+                    </p>
+                    <div class="feature-tag">Three.js</div>
+                </div>
+
+                <div class="feature-card glass-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i data-lucide="wifi-off"></i>
+                    </div>
+                    <h3 class="feature-title">Offline Mode</h3>
+                    <p class="feature-desc">
+                        Works without internet using Edge AI. Perfect for
+                        rural morgues with limited connectivity.
+                    </p>
+                    <div class="feature-tag">Whisper + RigoBERTa</div>
+                </div>
+
+                <div class="feature-card glass-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <h3 class="feature-title">IMLCF Format</h3>
+                    <p class="feature-desc">
+                        Generate official Instituto de Medicina Legal protocol
+                        PDFs that meet all regulatory requirements.
+                    </p>
+                    <div class="feature-tag">WeasyPrint</div>
+                </div>
+
+                <div class="feature-card glass-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3 class="feature-title">Secure & Compliant</h3>
+                    <p class="feature-desc">
+                        Enterprise-grade security with Azure Key Vault.
+                        HIPAA-ready architecture for sensitive data.
+                    </p>
+                    <div class="feature-tag">Azure Key Vault</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="section tech-stack" id="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technology</span>
+                <h2 class="section-title">Powered by <span class="text-gradient">Microsoft Azure</span></h2>
+                <p class="section-subtitle">
+                    Enterprise-grade AI infrastructure for mission-critical applications
+                </p>
+            </div>
+
+            <div class="tech-main">
+                <div class="tech-card-large glass-card animate-on-scroll">
+                    <img src="assets/images/azure-logos/azure-speech.png" alt="Azure AI Speech" class="tech-logo">
+                    <h3>Azure AI Speech</h3>
+                    <p>Real-time speech-to-text with medical vocabulary customization.
+                        Supports Spanish with 99%+ accuracy.</p>
+                    <ul class="tech-features">
+                        <li><i data-lucide="check"></i> Custom medical vocabulary</li>
+                        <li><i data-lucide="check"></i> Real-time streaming</li>
+                        <li><i data-lucide="check"></i> Multi-speaker diarization</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card-large glass-card animate-on-scroll">
+                    <img src="assets/images/azure-logos/azure-openai.png" alt="Azure OpenAI" class="tech-logo">
+                    <h3>Azure OpenAI (GPT-4)</h3>
+                    <p>Advanced entity extraction and field mapping.
+                        Understands complex medical context.</p>
+                    <ul class="tech-features">
+                        <li><i data-lucide="check"></i> Named Entity Recognition</li>
+                        <li><i data-lucide="check"></i> Semantic field mapping</li>
+                        <li><i data-lucide="check"></i> Context-aware extraction</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card-large glass-card animate-on-scroll">
+                    <img src="assets/images/azure-logos/azure-container.png" alt="Azure Container Apps"
+                        class="tech-logo">
+                    <h3>Azure Container Apps</h3>
+                    <p>Scalable, serverless container orchestration.
+                        Auto-scales based on demand.</p>
+                    <ul class="tech-features">
+                        <li><i data-lucide="check"></i> Docker-based deployment</li>
+                        <li><i data-lucide="check"></i> Auto-scaling</li>
+                        <li><i data-lucide="check"></i> Zero-downtime updates</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tech-additional">
+                <div class="tech-item animate-on-scroll">
+                    <img src="assets/images/azure-logos/azure-blob.png" alt="Azure Blob Storage">
+                    <span>Blob Storage</span>
+                </div>
+                <div class="tech-item animate-on-scroll">
+                    <img src="assets/images/azure-logos/azure-cosmos.png" alt="Azure Cosmos DB">
+                    <span>Cosmos DB</span>
+                </div>
+            </div>
+
+            <!-- Hybrid Architecture -->
+            <div class="hybrid-section animate-on-scroll">
+                <h3 class="hybrid-title">
+                    <i data-lucide="git-branch"></i>
+                    Hybrid Architecture
+                </h3>
+                <div class="hybrid-grid">
+                    <div class="hybrid-card cloud">
+                        <div class="hybrid-icon">
+                            <i data-lucide="cloud"></i>
+                        </div>
+                        <h4>Cloud Mode</h4>
+                        <p>With Internet</p>
+                        <ul>
+                            <li>Azure AI Speech</li>
+                            <li>Azure OpenAI</li>
+                            <li>Azure Storage</li>
+                        </ul>
+                    </div>
+
+                    <div class="hybrid-or">
+                        <span>OR</span>
+                    </div>
+
+                    <div class="hybrid-card edge">
+                        <div class="hybrid-icon">
+                            <i data-lucide="laptop"></i>
+                        </div>
+                        <h4>Edge Mode</h4>
+                        <p>Offline</p>
+                        <ul>
+                            <li>Whisper Local</li>
+                            <li>RigoBERTa</li>
+                            <li>SQLite</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="hybrid-tagline">"Same interface, same results"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="section demo" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Demo</span>
+                <h2 class="section-title">See It <span class="text-gradient">In Action</span></h2>
+                <p class="section-subtitle">
+                    Watch a forensic pathologist complete a full protocol in under 10 minutes
+                </p>
+            </div>
+
+            <div class="demo-container animate-on-scroll">
+                <div class="demo-video glass-card">
+                    <div class="video-placeholder">
+                        <div class="play-button">
+                            <i data-lucide="play"></i>
+                        </div>
+                        <span>Demo video coming soon</span>
+                    </div>
+                    <!-- When you have a video, replace with:
+                    <iframe 
+                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                        title="CoronerIA Demo"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    -->
+                </div>
+            </div>
+
+            <div class="demo-cta animate-on-scroll">
+                <a href="#contact" class="btn btn-primary btn-lg btn-glow">
+                    <i data-lucide="rocket"></i>
+                    Request Live Demo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="section impact" id="impact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Impact</span>
+                <h2 class="section-title">Measurable <span class="text-gradient">Results</span></h2>
+            </div>
+
+            <div class="impact-grid">
+                <div class="impact-card animate-on-scroll">
+                    <div class="impact-value">
+                        <span class="impact-number" data-count="70">0</span>
+                        <span class="impact-suffix">%</span>
+                    </div>
+                    <div class="impact-label">Time Reduction</div>
+                    <div class="impact-bar">
+                        <div class="impact-fill" style="--fill: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="impact-card animate-on-scroll">
+                    <div class="impact-value">
+                        <span class="impact-prefix">&lt;</span>
+                        <span class="impact-number" data-count="5">0</span>
+                        <span class="impact-suffix">%</span>
+                    </div>
+                    <div class="impact-label">Word Error Rate</div>
+                    <div class="impact-bar">
+                        <div class="impact-fill success" style="--fill: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="impact-card animate-on-scroll">
+                    <div class="impact-value">
+                        <span class="impact-number" data-count="10">0</span>
+                        <span class="impact-suffix">min</span>
+                    </div>
+                    <div class="impact-label">Per Case</div>
+                    <div class="impact-bar">
+                        <div class="impact-fill" style="--fill: 22%"></div>
+                    </div>
+                </div>
+
+                <div class="impact-card animate-on-scroll">
+                    <div class="impact-value">
+                        <span class="impact-number" data-count="100">0</span>
+                        <span class="impact-suffix">%</span>
+                    </div>
+                    <div class="impact-label">Offline Capable</div>
+                    <div class="impact-bar">
+                        <div class="impact-fill success" style="--fill: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Team</span>
+                <h2 class="section-title">Meet <span class="text-gradient">Sekhmed</span></h2>
+                <p class="section-subtitle">
+                    Healthcare AI from Latin America
+                </p>
+            </div>
+
+            <div class="team-content animate-on-scroll">
+                <div class="team-logo glass-card">
+                    <img src="assets/images/logo-sekhmed.png" alt="Sekhmed Logo">
+                </div>
+
+                <div class="team-info">
+                    <p class="team-desc">
+                        Built by passionate student engineers from
+                        <strong>Universidad Nacional de San Agustín</strong>,
+                        Arequipa, Peru 🇵🇪
+                    </p>
+                    <p class="team-mission">
+                        Our mission is to leverage AI to solve critical healthcare
+                        challenges in Latin America, starting with forensic medicine.
+                    </p>
+
+                    <div class="team-badge">
+                        <i data-lucide="award"></i>
+                        <span>Microsoft Imagine Cup 2026 Participant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta" id="contact">
+        <div class="container">
+            <div class="cta-content glass-card animate-on-scroll">
+                <h2 class="cta-title">
+                    Ready to <span class="text-gradient">Modernize</span> Forensic Documentation?
+                </h2>
+                <p class="cta-subtitle">
+                    Join us in revolutionizing Peru's forensic system with AI
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="mailto:contact@sekhmed.me" class="btn btn-primary btn-lg btn-glow">
+                        <i data-lucide="mail"></i>
+                        Request Demo
+                    </a>
+                    <a href="mailto:contact@sekhmed.me" class="btn btn-secondary btn-lg">
+                        <i data-lucide="message-circle"></i>
+                        Contact Us
+                    </a>
+                    <a href="https://github.com/sekhmed/coroneria" target="_blank" class="btn btn-outline btn-lg">
+                        <i data-lucide="github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="assets/images/logo-sekhmed.png" alt="Sekhmed Logo" class="logo-img">
+                        <span class="logo-text">Sekhmed</span>
+                    </a>
+                    <p class="footer-tagline">Healthcare AI from Latin America</p>
+                    <p class="footer-copyright">© 2026 Sekhmed. All rights reserved.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#tech-stack">Technology</a>
+                        <a href="#demo">Demo</a>
+                        <a href="https://github.com/sekhmed/coroneria" target="_blank">GitHub</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#team">About</a>
+                        <a href="#team">Team</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://github.com/sekhmed" target="_blank" class="social-link" aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i data-lucide="twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="powered-by">
+                    <span>Powered by</span>
+                    <img src="assets/images/azure-logos/azure-speech.png" alt="Microsoft Azure" class="azure-badge">
+                    <span>Microsoft Azure</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
